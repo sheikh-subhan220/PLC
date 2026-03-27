@@ -157,7 +157,7 @@ body{
 }
 #quote{
     font-size: 20px;
-    color: black;
+    color: white;
     text-align: center;
     margin-top: 10px;
     border: none;
@@ -371,11 +371,18 @@ label{
         align-items: flex-start;
         gap: 4px;
     }
+    .dropdowns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        width: 25%;
+        height: 100%;
+        font-size: medium;
+    }
+    .fa-angle-down{
+        display: none;
 
-    .dropdowns {
-        width: 100%;
-        justify-content: flex-start;
-        padding: 8px 0;
     }
 
     .backgroundimg {
