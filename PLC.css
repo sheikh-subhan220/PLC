@@ -316,7 +316,184 @@ label{
     color: white;
     font-weight: bolder;
 }
-/* Tablet */
+.reviews{
+    margin-top: 5%;
+    width: 100%;
+    height: 50%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-review{
+    width: 90%;
+    height: 95%;
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.review-heading{
+    width: 100%;
+    height: 30%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.review-heading h1{
+    font-weight: bolder;
+    font-style: italic;
+    /* color: white; */
+}
+.review-form{
+    width: 50%;
+    height: 65%;
+    /* background-color: cadetblue; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.review-input{
+    width: 70%;
+    border: none;
+    align-self: center;
+}
+.review-input-textarea{
+    width: 70%;
+    border: none;
+    align-self: center;
+    box-sizing: border-box;
+    resize: none;
+    width: 70%;
+    height: 50%;
+}
+#review-input-name{
+    height: 15%;
+}
+.post-review{
+    width: 10%;
+    height: 21%;
+    align-self: flex-end;
+    border-radius: 2%;
+    background-color: red;
+    color: white;
+}
+#parent{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+#down-element{
+    width: 30%;
+    height: 65%;
+    /* background-color: cadetblue; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+.review-layout {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto 0;
+}
+
+.reviews-container {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    padding: 10px 0 20px 0;
+}
+
+.reviews-container::-webkit-scrollbar {
+    height: 10px;
+}
+
+.reviews-container::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 20px;
+}
+
+.review-form {
+    width: 380px;
+    min-width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.review-input,
+.review-input-textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.review-input-textarea {
+    min-height: 150px;
+    resize: none;
+}
+
+.post-review {
+    width: 140px;
+    padding: 14px 18px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.review-card {
+    flex: 0 0 280px;
+    min-height: 180px;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.review-card h3 {
+    margin: 0 0 12px 0;
+    font-size: 28px;
+}
+
+.review-card p {
+    margin: 0;
+    line-height: 1.5;
+    word-break: break-word;
+}
+.review-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.review-controls button {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
+/*Tablet */
 @media (max-width: 992px) {
     .picedit {
         flex-direction: column;

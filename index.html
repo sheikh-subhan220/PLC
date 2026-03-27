@@ -7,6 +7,7 @@
     <link rel="icon" type="image/jpg" href="./Untitled.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="PLC.css"> 
+    <script src="PLC.js" defer></script>
 </head>
 <body>
     
@@ -96,6 +97,26 @@
             </div>
         </div>
         <br>
-        <div class="reviews"></div>
+        <div class="reviews">
+  <div class="inner-review">
+    <div class="review-heading">
+      <h1 class="hear-what-people-say-about-us">Hear what people actually say about us</h1>
+    </div>
+
+    <div class="review-layout">
+        <div class="review-controls">
+  <button onclick="scrollReviews('left')">◀</button>
+  <button onclick="scrollReviews('right')">▶</button>
+</div>
+      <div id="parent" class="reviews-container"></div>
+
+      <div class="review-form">
+        <input type="text" placeholder="Enter your Name" class="review-input" id="review-input-name">
+        <textarea class="review-input-textarea" placeholder="Please share your experience in 300 words" id="review-input-review" maxlength="300"></textarea>
+        <button class="post-review" onclick="postreview()">Post review</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
