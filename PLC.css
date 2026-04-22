@@ -7,7 +7,7 @@
 body{
     width: 100%;
     height: 100vh;
-    background-color:rgba(231, 229, 226, 0.877);
+    background-color:rgba(224, 221, 214, 0.877);
 }
 .main{
     width: 100%;
@@ -451,7 +451,7 @@ label{
     font-size: 20px;
     font-weight: lighter;
     text-align: center;
-    font-style: italic;
+    /* font-style: italic; */
     width: 100%;
     height: 10%;
     color: rgb(190, 195, 201);
@@ -534,247 +534,42 @@ label{
     justify-content: space-around; 
     
 }
-
-
-
-/*Tablet */
-@media (max-width: 992px) {
-    .picedit {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .box {
-        width: 100%;
-        max-width: 500px;
-    }
-
-    .maindropdowns {
-        justify-content: flex-start;
-    }
-    /* .video-block{
-        display: flex;
-        flex-direction: column;
-    } */
-    .supportive-block-for-video{
-        display: flex;
-        flex-direction: column;
-    }
-    .book-video-text{
-        height: 100%;
-        width: 100%;
-        display: block;
-        h1{
-            font-size: medium;
-        }
-        h3{
-
-            font-size:small;
-        }
+.charges-info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
 }
+.details-cost-charges {
+    width: 100%;
+    height: 100%;    
 }
-/* Mobile */
-@media (max-width: 600px) {
-    .main {
-        flex-direction: column;
-    }
-
-    .elements {
-        justify-content: center;
-    }
-
-    .PLC {
-        padding: 10px;
-    }
-
-    .maindropdowns {
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 4px;
-    }
-    .dropdowns{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        justify-content: center;
-        width: 25%;
-        height: 100%;
-        font-size: medium;
-    }
-    .fa-angle-down{
-        display: none;
-
-    }
-
-    .backgroundimg {
-        padding: 20px 15px;
-    }
-
-    .verticaltext {
-        font-size: 1.8rem;
-    }
-
-    .extratext {
-        font-size: 1rem;
-    }
-
-    #quote {
-        font-size: 1.1rem;
-    }
-    .movingtext{
-    display:none;  
-    } 
-    .elements{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .list{
-        width: 25%;
-        height: 100%;
-    }
-    #quote{
-        color: white;
-    }
-    .text{
-        display: none;
-    }
-    .video-block{ 
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        
-    }
-    .supportive-block-for-video{
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-    }
-    .book-video-text{
-        height: 100%;
-        width: 100%;
-        display: block;
-        h1{
-            font-size: medium;
-        }
-        h3{
-
-            font-size:small;
-        }
-        
-
-    }
+#details-cost-charges-heading{
+    width: 100%;
+    text-align: center;
+    font-size: 50px; 
+    font-weight: bolder;   
 }
-@media (max-width:400px){
-    .main {
-        flex-direction: column;
-    }
-
-    .elements {
-        justify-content: center;
-    }
-
-    .PLC {
-        padding: 10px;
-    }
-
-    .maindropdowns {
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 4px;
-    }
-
-    .dropdowns {
-        width: 100%;
-        justify-content: flex-start;
-        padding: 8px 0;
-    }
-
-    .backgroundimg {
-        padding: 20px 15px;
-    }
-
-    .verticaltext {
-        font-size: 1.8rem;
-    }
-
-    .extratext {
-        font-size: 1rem;
-    }
-
-    #quote {
-        font-size: 1.1rem;
-    }
-    .movingtext{
-    display:none;  
-    } 
-    .elements{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .list{
-        width: 25%;
-        height: 100%;
-    }
-    #quote{
-        color: white;
-    }
-    .text{
-        display: none;
-    }
-    .video-block{ 
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        
-    }
-    .supportive-block-for-video{
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-    }
-    .book-video-text{
-        height: 100%;
-        width: 100%;
-        display: block;
-    }
-
-    .book-video-text h1{
-            font-size: medium;
-        }
-    .book-video-text h3{
-
-            font-size:small;
-        }
-        .actual-video{
-            display: none;
-        }
-    .steps{
-        display: flex;
-        width: 100%;
-        height: 100%;
-        flex-wrap: wrap-reverse;
-    }  
-    .hello{
-        font-size: 20px;
-    }  
-    .dropdowns{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        justify-content: center;
-        width: 25%;
-        height: 100%;
-        font-size: medium;
-    }
-    .fa-angle-down{
-        display: none;
-
-    }
-
-    }
+#details-cost-charges-paragraph{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+}
+#three-buttons-for-quote{
+    width: 100%;
+    height: 50%;
+    display: flex;    
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#quote-generate-by-click{
+    width: 25%;
+    height: 20%;
+    border: 2px solid white double;
+    font-size: larger;
+    text-align: center;    
+}
